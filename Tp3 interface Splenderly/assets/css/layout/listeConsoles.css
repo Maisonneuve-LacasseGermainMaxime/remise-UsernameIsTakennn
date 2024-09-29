@@ -1,0 +1,40 @@
+/* liste de consoles nintendo accueil */
+
+.console{
+    cursor: pointer;
+}
+
+.produits{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.liste-console{
+    padding: var(--space-sm);
+    margin: var(--space-xxxs);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* image div */
+.liste-console_image{
+    max-width: 100px;
+    max-height: 150px;
+    padding: var(--space-md);
+}
+
+/* image aside */
+.detail-console_image{
+    max-width: 400px;
+    max-height: 400px;
+    padding: var(--space-md);
+}
+
+/* description aside */
+.detail-console_description{
+    letter-spacing: 1px;
+}

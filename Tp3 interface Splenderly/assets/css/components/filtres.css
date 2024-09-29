@@ -1,0 +1,26 @@
+/* filtres accueil */
+
+/* alignement tous les filtres */
+.filtres{
+    display: flex;
+    gap: 15px;
+    font-weight: bold;
+    padding: var(--font-size-xxl);
+    justify-content: flex-end;
+}
+
+/* prix croissant */
+.filtres .filtre{
+    padding: var(--space-md);
+    background-color: var(--color-filtre);
+    border-radius: 15px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 15%;
+    font-size: var(--font-size-sm);
+    text-align: center;
+}
+
+.filtre:hover{
+    background-color: var(--color-filtre-hover);
+}

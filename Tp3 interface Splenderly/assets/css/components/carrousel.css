@@ -1,0 +1,16 @@
+/* La carrousel dans à propos */
+
+.image-principale{
+    max-width: 35%;
+    object-fit: cover;
+}
+
+.carrousel-section{
+    max-width: 80%;
+    padding-left: var(--space-xxl)
+}
+
+.conteneur-image-principale{
+    /* border: 4mm ridge rgba(220, 50, 50, 0.6); */
+    padding-right: 15px;
+}

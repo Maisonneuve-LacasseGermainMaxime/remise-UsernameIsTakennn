@@ -1,0 +1,47 @@
+/* form section info delivery */
+
+.info-delivery{
+    background-color: var(--color-form-info);
+    padding: var(--space-lg);
+    letter-spacing: 0.8px;
+    font-size: var(--font-size-md);
+    border-radius: 15px;
+}
+
+.date_delivery{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}
+
+.legend_delivery{
+    margin: var(--space-md);
+}
+
+/* les deux fieldsets dans la section .info-delivery (livraison magasin && service livraison) */
+.shop_deliver, .type_services{
+    border-style: none;
+    padding: var(--space-sm)
+}
+
+/* l'input de type checkbox dans livraison magasin*/
+.shop_deliver input[type="checkbox"]{
+    float: left;
+    width: 25px;
+    margin-right: 10px;
+}
+
+
+/* les input de type radio dans service livraison */
+.type_services input[type="radio"]{
+    float: left;
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* les label de type radio dans service livraison */
+.type_services label{
+    float: left;
+    width: 85px;
+}

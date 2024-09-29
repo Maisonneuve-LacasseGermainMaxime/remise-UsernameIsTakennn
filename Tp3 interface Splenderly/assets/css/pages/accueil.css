@@ -1,0 +1,41 @@
+/* composants accueil */
+
+/* H1 accueil*/ 
+/* pour ne pas mettre les mêmes settings dans tous les h1 */
+.h1-accueil{
+    background-color: var(--color-background);
+    color: var(color-text-font);
+    text-align: center;
+}
+
+/* Section accueil */
+/* pour ne pas mettre les mêmes settings dans tous les sections */
+.section-accueil{
+    font-size: var(--font-size-sm);
+    padding: var(--space-xl);
+}
+
+/* aside accueil*/
+aside{
+    padding: var(--space-sm);
+    min-width: 525px;
+    max-width: 65ch;
+}
+
+/* div accueil*/
+div{
+    padding: var(--space-md)
+}
+
+#nav-principale{
+    display: contents;
+
+    &li[data-mode]{
+        color: rgb(51, 51, 51);
+        transition: color 350ms;
+    }
+
+    &li[data-mode]:hover{
+        color: whitesmoke;
+    }
+}

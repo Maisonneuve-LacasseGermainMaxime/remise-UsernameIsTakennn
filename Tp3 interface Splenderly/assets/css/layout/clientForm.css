@@ -1,0 +1,17 @@
+/* form section info client */
+
+.info-client{
+    padding: var(--space-lg);
+    letter-spacing: 0.8px;
+    font-size: var(--font-size-md);
+    border-radius: 15px;
+    background-color: var(--color-background);
+    color: var(--color-text-font);
+}
+
+.client_name, .client_email, .client_phone, .client_adress, .client_city, .client_zip-code{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 0.7rem;
+}

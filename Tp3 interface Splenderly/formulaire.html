@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/video-game-svgrepo-com.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/import.css">
+    <script src="assets/js/pages/formulaire.js" defer></script>
+    <script src="assets/js/components/navigation.js" defer></script>
+    <title>Formulaire d'achat</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/mario-figure.png" alt="mario figure" class="logo2">
+        <img src="assets/img/video-game-svgrepo-com.svg" alt="logo" class="logo" />
+        <nav id = "nav-principale"></nav>
+        <ul class="nav_liste conteneur-mode">
+            <li data-mode="nuit">Dark Mode</li>
+            <li data-mode="jour">Light Mode</li>
+        </ul>
+        <img src="assets/img/luigi-figure.png" alt="luigi figure" class="logo3">
+    </header>
+
+    <h1 class="h1-formulaire">Formulaire d'achat</h1>
+        
+    <form action="" method="post" id="formulaire-principal">
+        <section data-page="1" class="info-client">
+            <h2>Étape 1 - Informations sur le client</h2>
+
+            <div class="client_name">
+                <label for="name">Nom complet *obligatoire</label>
+                <input type="text" id="name" name="name" size="15" required/>
+                <p class="error-message">Vous devez saisir votre nom</p>
+            </div>
+            
+            <div class="client_email">
+                <label for="email">Courriel *obligatoire</label>
+                <input type="email" id="email" name="email" placeholder="test@gmail.com" required/>
+                <p class="error-message">Vous devez saisir un courriel valide</p>
+            </div>
+            
+            <div class="client_phone">
+                <label for="phone">Numéro de téléphone *obligatoire</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required/>
+                <p class="error-message">Vous devez saisir un numéro de téléphone valide</p>
+            </div>
+
+            <div class="client_adress">
+                <label for="address">Adresse *obligatoire</label>
+                <input type="text" id="address" name="address" size="15" required/>
+            </div>
+
+            <div class="client_city">
+                <label for="city">Ville *obligatoire</label>
+                <input type="text" id="city" name="city" size="15" required/>
+            </div>
+
+            <div class="client_zip-code">
+                <label for="zip_code">Code postal *obligatoire</label>
+                <input type="text" id="code_postal" name="code_postal" size="15" required/>
+                <p class="error-message">Vous devez saisir un code postal valide</p>
+            </div>
+
+            <button data-direction="1" disabled>Continuer</button>
+        </section>
+
+        <section data-page="2" class="info-delivery">
+            <h2>Étape 2 - Informations sur la livraison</h2>
+
+            <div class="date_delivery">
+                <label for="date">Date idéale de livraison *obligatoire</label>
+                <input type="date" id="delivery_date" name="set_date" required/>
+            </div>
+            
+
+            <fieldset class="shop_deliver">
+                <legend class="legend_delivery">Livraison en magasin</legend>
+
+                <input type="checkbox" name="shop_delivery" id="shop_check"/>
+                <label for="shop_delivery"></label>
+
+                <select name="succursale-select" id="succursale-select" disabled>
+                    <option value="">--Choisir un succursale--</option>
+                    <option value="Québec">Succursale de Québec</option>
+                    <option value="Montréal">Succursale de Montréal</option>
+                    <option value="Laval">Succursale de Laval</option>
+                    <option value="Trois-Rivière">Succursale de Trois-Rivière</option>
+                    <option value="Gaspésie">Succursale de Gaspésie</option>
+                    <option value="Drummondville">Succursale de Drummondville</option>
+                </select>
+
+            </fieldset>
+            <br>
+
+            <fieldset class="type_services">
+                <legend class="legend_delivery">Service de livraison</legend>
+
+                <input type="radio" id="poste_canada" name="service" value="Poste Canada"/>
+                <label for="poste_canada">Poste Canada</label>
+
+                <input type="radio" id="fedex" name="service" value="FedEx"/>
+                <label for="fedex">FedEx</label>
+
+                <input type="radio" id="ups" name="service" value="UPS"/>
+                <label for="ups">UPS</label>
+            </fieldset>
+
+            <button data-direction="-1">Retour</button>
+            <button data-direction="1" disabled>Continuer</button>
+        </section>
+
+        <section data-page="3" class="summary">
+            <h2>Étape 3 - Résumé</h2>
+
+            <div class="personal_info">
+                <p><strong>Informations personnelles</strong></p>
+                <span data-name="name"></span>
+                <br>
+                <span data-name="email"></span>
+                <br>
+                <span data-name="phone"></span>
+                <br>
+            </div>
+            <br>
+
+            <div class="adress_info">
+                <p><strong>Adresse</strong></p>
+                <span data-name="address"></span>
+                <br>
+                <span data-name="city"></span>
+                <br>
+                <span data-name="code_postal"></span>
+                <br>
+            </div>
+            <br>
+            
+            <div class="delivery_info">
+                <p><strong>Livraison</strong></p>
+                <span data-name="set_date"></span>
+                <br>
+                <span data-name="succursale-select"></span>
+                <br>
+                <span data-name="service"></span>
+                <br>
+            </div>
+            
+            <button data-direction="-1">Retour</button>
+        </section>
+    </form>
+</body>
+</html>
