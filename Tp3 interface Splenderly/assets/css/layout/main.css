@@ -1,0 +1,47 @@
+/* Composant général */
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+/* body */
+body{
+    font-family: var(--font-family-primaire);
+}
+
+/* Header nav */
+header{
+    padding: var(--space-xl);
+    background-color: var(--color-header);
+    display: flex;
+    gap: 4.2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ul */
+ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+/* li */
+li{
+    background-color: var(--color-nav-li);
+    padding: var(--space-lg);
+    transition-duration: 0.3s;
+    border-radius: 25px;
+}
+
+li:hover{
+    background-color: var(--color-nav-li-hover);
+}
+
+/* nav */
+/* nav{
+    font-family: var(--font-family-secondaire);
+} */

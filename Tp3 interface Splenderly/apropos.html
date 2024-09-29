@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/video-game-svgrepo-com.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/import.css">
+    <script src="assets/js/components/navigation.js" defer></script>
+    <script type="module" src="assets/js/pages/apropos.js"></script>
+    <title>À propos</title>
+</head>
+<body>
+    <header>
+        <img src="assets/img/mario-figure.png" alt="mario figure" class="logo2">
+        <img src="assets/img/video-game-svgrepo-com.svg" alt="logo" class="logo" />
+        <nav id = "nav-principale"></nav>
+        <ul class="nav_liste conteneur-mode">
+            <li data-mode="nuit">Dark Mode</li>
+            <li data-mode="jour">Light Mode</li>
+        </ul>
+        <img src="assets/img/luigi-figure.png" alt="luigi figure" class="logo3">
+    </header>
+    
+    <main>
+        <h1 class="h1-apropos">À propos</h1>
+
+        <section class="histoire sans-opacite">
+            <h2>Notre histoire sur les consoles</h2>
+            <p>Découvrez nos histoires sur les consoles de Nintendo, leurs années d'apparitions et l'utilité de chaque consoles après avoir été créés.</p>
+        </section>
+
+        <section class="collection sans-opacite">
+            <h2>Nos collection des consoles</h2>
+            <p>Voici les consoles de Nintendo qui sont apparues jusqu'à présent.</p>
+        </section>
+
+        <div class="carrousel-section" data-carrousel>
+            <div class="conteneur-image-principale">
+                <img class="image-principale" src="assets/img/nintendo color tv-game.jpg" alt="" />
+            </div>
+            <div class="conteneur-principale">
+                <p class="nom-principale">Color TV-Game - 1977</p>
+            </div>
+
+            <template id="conteneur-image-navigation">
+                <div class="conteneur-image-navigation">
+                    <img src="assets/img/nintendo game & watch.jpg" alt="" />
+                    <img src="assets/img/nintendo famicom.jpg" alt=""/>
+                    <img src="assets/img/nintendo-nes.jpg" alt="">
+                    <img src="assets/img/nintendo-gameboy.jpg" alt="">
+                    <img src="assets/img/nintendo-snes.jpg" alt="">
+                    <img src="assets/img/nintendo virtual boy.jpg" alt="">
+                    <img src="assets/img/nintendo 64.jpg" alt="">
+                    <img src="assets/img/nintendo game boy color.jpg" alt="">
+                    <img src="assets/img/nintendo-gba.jpg" alt="">
+                    <img src="assets/img/nintendo gamecube.jpg" alt="">
+                    <img src="assets/img/nintendo-ds.jpg" alt="">
+                    <img src="assets/img/nintendo-ds-lite.jpg" alt="">
+                    <img src="assets/img/nintendo wii.jpg" alt="">
+                    <img src="assets/img/nintendo-3ds.jpg" alt="">
+                    <img src="assets/img/nintendo wii u.jpg" alt="">
+                    <img src="assets/img/nintendo-switch.jpg" alt="">
+                    <img src="assets/img/nintendo-switch-lite.jpg" alt="">
+                </div>
+
+            </template>
+
+            <template id="conteneur-nom-navigation">
+                <div class="conteneur-nom-navigation">
+                    <p>Game & Watch - 1980</p>
+                    <p>Famicom - 1983</p>
+                    <p>NES - 1985</p>
+                    <p>Gameboy - 1989</p>
+                    <p>SNES - 1991</p>
+                    <p>Virtual Boy - 1995</p>
+                    <p>Nintendo 64 - 1996</p>
+                    <p>Game Boy Color - 1998</p>
+                    <p>GBA - 2001</p>
+                    <p>Gamecube - 2001</p>
+                    <p>DS - 2004</p>
+                    <p>DS Lite - 2006</p>
+                    <p>Wii - 2006</p>
+                    <p>3DS - 2011</p>
+                    <p>Wii U - 2012</p>
+                    <p>Switch - 2017</p>
+                    <p>Switch Lite - 2019</p>
+                </div>
+            </template>
+            
+            <div class="carrousel-liste-images"></div>
+            <button data-direction="-1">Reculer</button>
+            <button data-direction="1">Avancer</button>
+        </div>
+        
+        <section class="contact sans-opacite">
+            <h2>Contact</h2>
+            <p>Vous avez besoin d'aide ou des questions à propos de nos ventes? N'hésitez pas à nous contacter au (123) 456-7890.</p>
+        </section>
+
+            <div class="modale-conteneur">
+                <div class="modale">
+                    <h3 class="modale-header">Abonnement infolettre</h3>
+                    <p>Veuillez vous abonnez à notre infolettre pour les dernières nouvelles, promotions, précommandes et plus encore.</p>
+                    <div>
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email" placeholder="test@exemple.com"/>
+                        <input type="submit">
+                    </div>
+                    <div class="fermer-modale interactive">Fermer</div>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

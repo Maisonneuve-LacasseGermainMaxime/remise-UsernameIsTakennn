@@ -1,0 +1,26 @@
+/* boutons form */
+
+button{
+    background-color: var(--color-button);
+    color: white;
+    border-radius: 25px;
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    letter-spacing: 0.8px;
+    transition-duration: 0.3s;
+    border-style: none;
+    margin-top: var(--space-md);
+    color: black;
+}
+
+button:hover{
+    background-color: var(--color-button-hover);
+    color: black;
+}
+
+button:disabled{
+    background-color: var(--color-button-disabled);
+    pointer-events: none;
+}

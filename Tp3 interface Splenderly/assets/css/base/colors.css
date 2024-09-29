@@ -1,0 +1,48 @@
+/* Variables couleurs */
+
+:root {
+    --color-header : #24afff;
+    --color-nav-li : #FFCE24;
+    --color-nav-li-hover : #FFA124;
+    --color-nav-a : #003d61;
+    --color-nav-a-hover : #0066ff;
+
+    --color-text-font : #ebebeb;
+    --color-background : #5089AA;
+
+    --color-filtre : #24FFD9;
+    --color-filtre-hover : #FFCE24;
+
+    --color-form-info : #6cdb7b;
+
+    --color-error : #b64733;
+
+    --color-button : #FFCE24;
+    --color-button-hover : #FFA124;
+    --color-button-disabled : #c2e6e6;
+
+    --transparence-modale : rgba(0, 0, 0, 0.5);
+}
+
+/* body[data-theme="nuit"]{
+    --color-header : #181818;
+    --color-nav-li : #d6d6d6;
+    --color-nav-a : #5300b6;
+    --color-nav-a-hover : #003481;
+
+    --color-titre-font : #ebebeb;
+    --color-h1 : #d8d8d8;
+
+    --color-filtre : #e0e0e0;
+    --color-filtre-hover : #df84b2;
+
+    --color-form-info : #eeeeee;
+
+    --color-error : #b64733;
+
+    --color-button : #7faeb4;
+    --color-button-hover : #c2e6e6;
+    --color-button-disabled : #c2e6e6;
+
+    --transparence-modale : rgba(0, 0, 0, 0.5);
+} */

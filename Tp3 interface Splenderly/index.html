@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/video-game-svgrepo-com.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/import.css">
+    <script type="module" src="assets/js/pages/accueil.js"></script>
+    <script src="assets/js/components/navigation.js" defer></script>
+    <title>Consoles Nintendo</title>
+</head>
+<body data-page="a-propos">
+    <header>
+        <img src="assets/img/mario-figure.png" alt="mario figure" class="logo2">
+        <img src="assets/img/video-game-svgrepo-com.svg" alt="logo" class="logo" />
+        <nav id = "nav-principale"></nav>
+        <ul class="nav_liste conteneur-mode">
+            <li data-mode="nuit">Dark Mode</li>
+            <li data-mode="jour">Light Mode</li>
+        </ul>
+        <img src="assets/img/luigi-figure.png" alt="luigi figure" class="logo3">
+    </header>
+
+    <main>
+        <section class="section-accueil">
+            <h1 class="h1-accueil">Liste des consoles</h1>
+            <div class="filtres">
+            <div class="filtre">Afficher les prix en ordre croissant</div>
+            <div class="tri tri-asc">Afficher par ordre alphabétique de A-Z</div>
+            <div class="tri tri-desc">Afficher par ordre alphabétique de Z-A</div>
+            </div>
+        </section>
+
+        <section class="produits">
+            <div class="liste-console"></div>
+            <aside class="item-presentation"></aside>
+        </section>
+
+    </main>
+</body>
+</html>

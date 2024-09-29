@@ -1,0 +1,23 @@
+/* composants à propos */
+main{
+    padding: var(--space-xl);
+}
+
+.h1-apropos{
+    padding: var(--space-xl);
+    text-align: center;
+    margin-top: var(--space-md);
+}
+
+section{
+    margin-top: var(--space-md);
+    margin-left: var(--space-md);
+    padding: var(--space-lg);
+}
+
+/* redo scroll animation needed */
+/* [data-page="a-propos"] section{
+    padding: 50px;
+    width: 100%;
+    transition: opacity 1000ms;
+} */

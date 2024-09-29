@@ -1,0 +1,25 @@
+/* Taille du logo dans le header */
+
+/* logo nav and someone behind it*/
+.logo, .logo2, .logo3{
+    max-width: 100px;
+    max-height: 100px;
+
+}
+
+.logo{
+    position: absolute;
+    animation: logomove 40s infinite;
+}
+
+@keyframes logomove{
+    0% {
+        transform: translateX(-485px);;
+    }
+    50%{
+        transform: translateX(485px);
+    }
+    100%{
+        transform: translateX(-485px);;
+    }
+}

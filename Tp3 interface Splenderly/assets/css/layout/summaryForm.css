@@ -1,0 +1,9 @@
+/* form section info resume */
+
+.summary{
+    background-color: var(--color-form-info);
+    padding: var(--space-lg);
+    letter-spacing: 0.8px;
+    font-size: var(--font-size-md);
+    border-radius: 15px;
+}

@@ -1,0 +1,27 @@
+/* Importation des fichiers */
+
+/* base */
+@import url(./base/colors.css);
+@import url(./base/spacing.css);
+@import url(./base/typography.css);
+
+/* components */
+@import url(./components/filtres.css);
+@import url(./components/triage.css);
+@import url(./components/boutons.css);
+@import url(./components/modale.css);
+@import url(./components/carrousel.css);
+
+/* pages*/
+@import url(./pages/accueil.css);
+@import url(./pages/form.css);
+@import url(./pages/apropos.css);
+
+/* layout */
+@import url(./layout/main.css);
+@import url(./layout/logo.css);
+@import url(./layout/listeConsoles.css);
+@import url(./layout/exceptions.css);
+@import url(./layout/clientForm.css);
+@import url(./layout/deliveryForm.css);
+@import url(./layout/summaryForm.css)
